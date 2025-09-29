@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "781430569077",
+    "project_id": "app-saya-95a15",
+    "storage_bucket": "app-saya-95a15.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781430569077:android:a900fc93dabcf1ce15a03c",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "781430569077-paikbsmoe9ar4sevq627rlv4k8t1lekc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "7db138e058de630b206ce5f8a4c578cadb3f43a0"
+          }
+        },
+        {
+          "client_id": "781430569077-q3hpn589jto39l5dmv4rbm13j5fu45fl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdLX2uhO0RLxU0ZVi81hpDY7ZhKH1f9Lk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "781430569077-q3hpn589jto39l5dmv4rbm13j5fu45fl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
