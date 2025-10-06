@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -32,7 +33,9 @@ class MainActivity : AppCompatActivity() {
         // 2. Inisiasi Binding
         binding = ActivityMainBinding.inflate(layoutInflater)
         // 3. Set content dari Binding
-        setContentView(binding.root)
+        setContentView(
+            binding.root
+        )
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -87,6 +90,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "login gagal:" + exc.message, Toast.LENGTH_SHORT).show()
         }
     }
+
     fun firebaseLoginCallback(idToken: String) {
         val credential = GoogleAuthProvider.getCredential(idToken, null)
         auth.signInWithCredential(credential)
@@ -94,12 +98,28 @@ class MainActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
                     Toast.makeText(this, "login berhasil", Toast.LENGTH_LONG).show()
-                }
-                else {
+                    toMyApplication()
+                } else {
                     // If sign in fails, display a message to the user.
                     Toast.makeText(this, "login gagal", Toast.LENGTH_LONG).show()
                 }
             }
 
+    }
+
+    fun isAuthenticated(): Boolean {
+        return auth.currentUser != null
+    }
+
+    private fun toMyApplication() {
+        val intent = Intent(this, MainActivity2::class.java)
+        startActivity(intent)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        if (isAuthenticated()) {
+            toMyApplication()
+        }
     }
 }
