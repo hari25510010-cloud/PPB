@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "197548912185",
+    "project_id": "aplikasi-saya-47347",
+    "storage_bucket": "aplikasi-saya-47347.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197548912185:android:a9e677170c5c22614267e8",
+        "android_client_info": {
+          "package_name": "com.example.todoku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197548912185-2eee0geckqfhspocn7o6j7n4nva75c8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVojgmAPfAit-kS3DvIpI7vNuD1OBRB0I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197548912185-2eee0geckqfhspocn7o6j7n4nva75c8l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
